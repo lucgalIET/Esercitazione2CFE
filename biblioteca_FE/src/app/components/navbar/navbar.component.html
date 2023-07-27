@@ -1,11 +1,23 @@
-<nav>
-  <div class="nav-link">
-    <a routerLink="" href="">Biblioteca</a>
+<nav color="primary">
+  <div class="navItem">
+    <div class="logo">
+      <mat-list role="list">
+        <mat-list-item role="listitem" routerLink="">Biblioteca</mat-list-item>
+      </mat-list>
+    </div>
+    <div class="options">
+      <div class="option">
+        <mat-list role="list">
+          <mat-list-item role="listitem" routerLink="libri"
+            >Libri</mat-list-item
+          >
+        </mat-list>
+      </div>
+      <div class="option">
+        <mat-list role="list">
+          <mat-list-item routerLink="autori">Autori</mat-list-item>
+        </mat-list>
+      </div>
+    </div>
   </div>
-  <div class="nav-link">
-  <a routerLink="libri">Libri</a>
-</div>
-  <div class="nav-link">
-  <a routerLink="autori">Autori</a>
-</div>
 </nav>

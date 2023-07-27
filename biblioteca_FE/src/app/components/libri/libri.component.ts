@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LibriService } from 'src/app/services/libri.service';
 
 @Component({
   selector: 'app-libri',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./libri.component.css']
 })
 export class LibriComponent {
+  constructor(private serviceLibro: LibriService){}
+
+  libri:any;
+  ngOnInit(): void{
+    this.serviceLibro.getLibri().subscribe(
+      response => {
+        this.libri = response;
+      }
+    )
+  }
 
 }
