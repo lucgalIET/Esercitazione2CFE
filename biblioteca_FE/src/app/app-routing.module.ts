@@ -6,8 +6,8 @@ import { AutoriComponent } from './components/autori/autori.component';
 
 const routes: Routes = [
   {path: '', component:BibliotecaComponent},
-  {path: '/libri', component:LibriComponent},
-  {path: '/autori', component:AutoriComponent},
+  {path: 'libri', component:LibriComponent},
+  {path: 'autori', component:AutoriComponent},
 
 ];
 

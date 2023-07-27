@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BibliotecaComponent } from './components/biblioteca/biblioteca.component';
 import { LibriComponent } from './components/libri/libri.component';
 import { AutoriComponent } from './components/autori/autori.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AutoriComponent } from './components/autori/autori.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
